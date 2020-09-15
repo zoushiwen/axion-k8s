@@ -1,0 +1,15 @@
+- hosts: all
+  gather_facts: no
+  tasks:
+    - name: install chrom Font
+      yum: name=google-chrome-stable_current state=installed
+    - name: install glib2
+      yum: name=glib2 state=installed
+    - name: install chinese Font
+      yum: name=wqy-microhei-fonts state=installed
+    - name: install
+      yum: name=wqy-zenhei-fonts state=installed
+    - name: install chrom
+      yum: name=google-chrome state=installed
+    - name: install supervisor
+      yum: name=supervisord state=installed
